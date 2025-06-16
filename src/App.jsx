@@ -8,6 +8,7 @@ import JsxWithCurrlyBraces from "./JsxWithCurrlyBraces";
 import ClickEventAndFuncationCall from "./ClickEventAndFuncationCall";
 import UseStateComponent from "./UseStateComponent";
 import Counter from "./Counter";
+import ToggleHideAndshow from "./ToggleHide&Show";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,6 +38,7 @@ function App() {
     <div>
       <UseStateComponent />
       <Counter />
+      <ToggleHideAndshow />
     </div>
     </>
   );
