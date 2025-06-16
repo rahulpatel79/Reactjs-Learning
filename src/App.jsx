@@ -1,19 +1,34 @@
-import { useState } from "react";
+import { Profiler, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./Header";
+import { Login, Profile } from "./UserComponent";
+import JsxWithCurrlyBraces from "./JsxWithCurrlyBraces";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header />
-      <Apple />
-      <Color /> {/* Compomets ko acces krne ka tarica hota he. 2) Componet Capital letter se start hota he.  */}
+    <div>
+    {/* <Login />
+    <Profile />
+    <Header />
+    <Apple />
+    <Color /> */}
+       {/* Compomets ko acces krne ka tarica hota he. 2) Componet Capital letter se start hota he.  */}
+      {/* <h1>Hello, <br /> It is Funcation : {sum()}</h1> */}
+       {/* funcation ko acces krne ka tarika {sum()} hota he. 2) funcatin small letter se start hota he. */}
+    </div>
 
-      <h1>Hello, <br /> It is Funcation : {sum()}</h1> {/* funcation ko acces krne ka tarika {sum()} hota he. 2) funcatin small letter se start hota he. */}
+    {/* <div>
+      <JsxWithCurrlyBraces />
+    </div> */}
+    
+    <div>
+      <JsxWithCurrlyBraces />
+    </div>
     </>
   );
 }
