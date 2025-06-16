@@ -5,6 +5,9 @@ import "./App.css";
 import Header from "./Header";
 import { Login, Profile } from "./UserComponent";
 import JsxWithCurrlyBraces from "./JsxWithCurrlyBraces";
+import ClickEventAndFuncationCall from "./ClickEventAndFuncationCall";
+import UseStateComponent from "./UseStateComponent";
+import Counter from "./Counter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,8 +29,14 @@ function App() {
       <JsxWithCurrlyBraces />
     </div> */}
     
+    {/* <div>
+      <ClickEventAndFuncationCall />
+    </div> */}
+   
+   
     <div>
-      <JsxWithCurrlyBraces />
+      <UseStateComponent />
+      <Counter />
     </div>
     </>
   );
