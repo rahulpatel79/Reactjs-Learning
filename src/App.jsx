@@ -15,7 +15,11 @@ import InputField from "./InputField";
 import ControllerComponentForm from "./ControllerComponentForm";
 import HandleCheckbox from "./HandleCheckbox";
 import HandleRadioAndDropDown from "./HandleRadioAndDropDown";
-import LoopMathWithFunction from "./LoopMathWithFunction";
+import LoopMapthWithFunction from "./LoopMapWithFunction";
+import LoopMapWithFunction from "./LoopMapWithFunction";
+import ReuseComponentInMap from "./ReuseComponentInMap";
+import TaskClockColor from "./TaskClockColor";
+ 
 
 function App() {
   const [count, setCount] = useState(0);
@@ -64,8 +68,10 @@ function App() {
       </div> */}
       
       {/* <HandleCheckbox /> */}
-      <HandleRadioAndDropDown />
-      <LoopMathWithFunction />
+      {/* <HandleRadioAndDropDown /> */}
+      {/* <LoopMapWithFunction /> */}
+      {/* <ReuseComponentInMap /> */}
+      <TaskClockColor />
 
     </>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LoopMathWithFunction() {
+function LoopMapWithFunction() {
 
     const userDate = [
   {
@@ -43,7 +43,8 @@ function LoopMathWithFunction() {
 
   return (
     <div>
-      <table border={"2"}>
+        <h1>Loop Map With Function </h1>
+      <table border={"1"}>
         <thead>
             <tr >
                 <td>ID</td>
@@ -73,4 +74,4 @@ function LoopMathWithFunction() {
   )
 }
 
-export default LoopMathWithFunction
+export default LoopMapWithFunction
