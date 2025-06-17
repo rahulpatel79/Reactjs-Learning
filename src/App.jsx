@@ -14,6 +14,8 @@ import PropesInReact from "./PropesInReact";
 import InputField from "./InputField";
 import ControllerComponentForm from "./ControllerComponentForm";
 import HandleCheckbox from "./HandleCheckbox";
+import HandleRadioAndDropDown from "./HandleRadioAndDropDown";
+import LoopMathWithFunction from "./LoopMathWithFunction";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -61,7 +63,9 @@ function App() {
         <ControllerComponentForm />
       </div> */}
       
-      <HandleCheckbox />
+      {/* <HandleCheckbox /> */}
+      <HandleRadioAndDropDown />
+      <LoopMathWithFunction />
 
     </>
   );
