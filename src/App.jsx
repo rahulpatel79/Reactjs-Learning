@@ -9,6 +9,9 @@ import ClickEventAndFuncationCall from "./ClickEventAndFuncationCall";
 import UseStateComponent from "./UseStateComponent";
 import Counter from "./Counter";
 import ToggleHideAndshow from "./ToggleHide&Show";
+import MultipleConditionInReactJs from "./MultipleConditionInReactJs";
+import PropesInReact from "./PropesInReact";
+import InputField from "./InputField";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,14 +38,26 @@ function App() {
     </div> */}
    
    
-    <div>
+    {/* <div>
       <UseStateComponent />
       <Counter />
       <ToggleHideAndshow />
+    </div> */}
+
+    <div>
+      <MultipleConditionInReactJs />
     </div>
+
+    <div>
+        <PropesInReact /> 
+    </div>
+
+      <InputField />
+
     </>
   );
 }
+
 
  
 
