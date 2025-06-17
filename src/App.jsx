@@ -19,6 +19,7 @@ import LoopMapthWithFunction from "./LoopMapWithFunction";
 import LoopMapWithFunction from "./LoopMapWithFunction";
 import ReuseComponentInMap from "./ReuseComponentInMap";
 import TaskClockColor from "./TaskClockColor";
+import NestedLooping from "./NestedLooping";
  
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
       {/* <LoopMapWithFunction /> */}
       {/* <ReuseComponentInMap /> */}
       <TaskClockColor />
+      <NestedLooping />
 
     </>
   );
