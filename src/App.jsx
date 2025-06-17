@@ -12,6 +12,10 @@ import ToggleHideAndshow from "./ToggleHide&Show";
 import MultipleConditionInReactJs from "./MultipleConditionInReactJs";
 import PropesInReact from "./PropesInReact";
 import InputField from "./InputField";
+import ControllerComponentForm from "./ControllerComponentForm";
+import HandleCheckbox from "./HandleCheckbox";
+import HandleRadioAndDropDown from "./HandleRadioAndDropDown";
+import LoopMathWithFunction from "./LoopMathWithFunction";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,15 +48,24 @@ function App() {
       <ToggleHideAndshow />
     </div> */}
 
-    <div>
+    {/* <div>
       <MultipleConditionInReactJs />
     </div>
 
     <div>
         <PropesInReact /> 
-    </div>
-
+    </div> */}
+      {/* <div>
       <InputField />
+      </div> */}
+
+      {/* <div>
+        <ControllerComponentForm />
+      </div> */}
+      
+      {/* <HandleCheckbox /> */}
+      <HandleRadioAndDropDown />
+      <LoopMathWithFunction />
 
     </>
   );
