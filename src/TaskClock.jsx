@@ -12,18 +12,22 @@ function TaskClock({color}) {
 
   return (
     <div>
-      <h1
+      <div
         style={{
           color: color,
           backgroundColor: "orange",
           borderRadius: "50px",
-          padding: "10px",
-          width:"12%",
-          fontSize:"16px",
+          padding: "8px",
+          width:"100%",
+          fontSize:"20px",
+          marginLeft:"20px",
+          fontWeight:"700",
+          textAlign:"center"
+          
         }}
       >
         {time}
-      </h1>
+      </div>
     </div>
   );
 }

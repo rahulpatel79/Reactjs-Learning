@@ -5,16 +5,17 @@ function TaskClockColor() {
   const [color, setColor] = useState("black");
 
   return (
-    <div >
-      <h1>Digital Clock in React Js</h1>
- 
+    <>
+      {/* <h1>Digital Clock in React Js</h1> */}
+      <div style={{display:"flex", width:"100%",height:"46px"}}>
+      
       <select
         onChange={(event) => setColor(event.target.value)}
         style={{
-          padding: "10px",
+          padding: "5px",
           fontWeight: "600",
-          fontSize: "10px",
-          borderRadius: "20px",display: "flex",width:"15%"
+          fontSize: "15px",
+          borderRadius: "20px",display: "flex",width:"8%"
         }}
       >
         <option value={"black"}>Black</option>
@@ -24,7 +25,9 @@ function TaskClockColor() {
       </select>
 
       <TaskClock color={color} />
-    </div>
+</div>
+
+    </>
   );
 }
 
