@@ -20,6 +20,7 @@ import LoopMapWithFunction from "./LoopMapWithFunction";
 import ReuseComponentInMap from "./ReuseComponentInMap";
 import TaskClockColor from "./TaskClockColor";
 import NestedLooping from "./NestedLooping";
+import UseEffectInReact from "./UseEffectInReact";
  
 
 function App() {
@@ -73,7 +74,8 @@ function App() {
       {/* <LoopMapWithFunction /> */}
       {/* <ReuseComponentInMap /> */}
       <TaskClockColor />
-      <NestedLooping />
+      {/* <NestedLooping /> */}
+      <UseEffectInReact />
 
     </>
   );

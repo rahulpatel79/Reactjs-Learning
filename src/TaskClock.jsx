@@ -17,7 +17,9 @@ function TaskClock({color}) {
           color: color,
           backgroundColor: "orange",
           borderRadius: "50px",
-          padding: "20px",
+          padding: "10px",
+          width:"12%",
+          fontSize:"16px",
         }}
       >
         {time}
