@@ -11,10 +11,10 @@ function TaskClockColor() {
       <select
         onChange={(event) => setColor(event.target.value)}
         style={{
-          padding: "20px",
+          padding: "10px",
           fontWeight: "600",
-          fontSize: "20px",
-          borderRadius: "20px",display: "flex"
+          fontSize: "10px",
+          borderRadius: "20px",display: "flex",width:"15%"
         }}
       >
         <option value={"black"}>Black</option>
