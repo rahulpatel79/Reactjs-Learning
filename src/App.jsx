@@ -22,6 +22,7 @@ import TaskClockColor from "./TaskClockColor";
 import NestedLooping from "./NestedLooping";
 import UseEffectInReact from "./UseEffectInReact";
 import UseEffectInReact2 from "./UseEffectInReact2";
+import InlineCssInReactJs from "./InlineCssInReactJs";
  
 
 function App() {
@@ -77,7 +78,10 @@ function App() {
       <TaskClockColor />
       {/* <NestedLooping /> */}
       {/* <UseEffectInReact /> */}
-      <UseEffectInReact2 />
+      {/* <UseEffectInReact2 /> */}
+<div style={{marginTop:"20px"}}>
+      <InlineCssInReactJs />
+</div>
 
     </>
   );
