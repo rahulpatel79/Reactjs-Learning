@@ -21,6 +21,7 @@ import ReuseComponentInMap from "./ReuseComponentInMap";
 import TaskClockColor from "./TaskClockColor";
 import NestedLooping from "./NestedLooping";
 import UseEffectInReact from "./UseEffectInReact";
+import UseEffectInReact2 from "./UseEffectInReact2";
  
 
 function App() {
@@ -75,7 +76,8 @@ function App() {
       {/* <ReuseComponentInMap /> */}
       <TaskClockColor />
       {/* <NestedLooping /> */}
-      <UseEffectInReact />
+      {/* <UseEffectInReact /> */}
+      <UseEffectInReact2 />
 
     </>
   );
