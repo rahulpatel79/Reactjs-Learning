@@ -2,6 +2,7 @@ import { Profiler, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css'; // it is bootstrap css...
 import Header from "./Header";
 import { Login, Profile } from "./UserComponent";
 import JsxWithCurrlyBraces from "./JsxWithCurrlyBraces";
@@ -25,6 +26,8 @@ import UseEffectInReact2 from "./UseEffectInReact2";
 import InlineCssInReactJs from "./InlineCssInReactJs";
 import TaskCard from "./TaskCardData";
 import TaskCardData from "./TaskCardData";
+import BootstrapUsInReactJs from "./BootstrapUsInReactJs";
+import UseRefInReact from "./UseRefInReact";
  
 
 function App() {
@@ -81,9 +84,13 @@ function App() {
       {/* <NestedLooping /> */}
       {/* <UseEffectInReact /> */}
       {/* <UseEffectInReact2 /> */}
-<div style={{marginTop:"20px"}}>
+{/* <div style={{marginTop:"20px"}}>
      <TaskCardData />
-  
+</div> */}
+
+<div style={{marginTop:"20px"}}>
+     <BootstrapUsInReactJs />
+     <UseRefInReact />
 </div>
 
     </>
