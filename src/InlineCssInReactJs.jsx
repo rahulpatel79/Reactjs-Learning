@@ -1,4 +1,6 @@
 import React, {  useState } from 'react'
+import { Button } from 'react-bootstrap';
+
 
 function InlineCssInReactJs({testData}) {
 
@@ -29,17 +31,17 @@ setMainDiv({...mainDiv, backgroundColor:bgColor,color:textColor})
          borderRadius:"20px", marginTop:"20px", textAlign:"center"}}>React In Inline Css</div>
          <h1>Hello</h1>
          <div style={{display : "flex", gap:"10px"}}> 
-            <button onClick={()=>updateTheam('orange', 'white')}>Theam Change</button>
-            <button onClick={()=>updateTheam()}>Reset</button>
-            <button onClick={()=>setFlex(!flex)}> {flex ? 'Block' : 'Flex'}</button>
+            <Button onClick={()=>updateTheam('orange', 'white')}>Theam Change</Button>
+            <Button onClick={()=>updateTheam()}>Reset</Button>
+            <Button onClick={()=>setFlex(!flex)}> {flex ? 'Block' : 'Flex'}</Button>
          </div>
         <div style={{display: flex ? 'flex' : 'block',flexWrap:"wrap"}}>
            {Array.isArray(testData) && testData.length > 0 ? (
   testData.map((info, index) => (
     <div key={index} style={mainDiv}>
-      <img src={info.img} style={{width:"215px"}} alt={info.name} />
-      <h2>{info.name}</h2>
-      <h3>{info.position}</h3>
+      <img src={info.img} style={{width:"205px"}} alt={info.name} />
+      <h4>{info.name}</h4>
+      <h5>{info.position}</h5>
     </div>
   ))
 ) : (
