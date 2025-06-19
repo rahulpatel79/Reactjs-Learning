@@ -27,7 +27,6 @@ setMainDiv({...mainDiv, backgroundColor:bgColor,color:textColor})
     <>
       <div style={{color:"blue", backgroundColor:"Orange", fontSize:"20px", fontWeight:"600",
          borderRadius:"20px", marginTop:"20px", textAlign:"center"}}>React In Inline Css</div>
-
          <h1>Hello</h1>
          <div style={{display : "flex", gap:"10px"}}> 
             <button onClick={()=>updateTheam('orange', 'white')}>Theam Change</button>
@@ -46,10 +45,7 @@ setMainDiv({...mainDiv, backgroundColor:bgColor,color:textColor})
 ) : (
   <p>Loading or no data available...</p>
 )}
-
-
-
-        </div>
+     </div>
 
     </>
   )
