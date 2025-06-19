@@ -28,6 +28,7 @@ import TaskCard from "./TaskCardData";
 import TaskCardData from "./TaskCardData";
 import BootstrapUsInReactJs from "./BootstrapUsInReactJs";
 import UseRefInReact from "./UseRefInReact";
+import PassAsAFunctionInProp from "./PassAsAFunctionInProp";
  
 
 function App() {
@@ -91,6 +92,7 @@ function App() {
 <div style={{marginTop:"20px"}}>
      <BootstrapUsInReactJs />
      <UseRefInReact />
+     <PassAsAFunctionInProp />
 </div>
 
     </>
