@@ -23,6 +23,8 @@ import NestedLooping from "./NestedLooping";
 import UseEffectInReact from "./UseEffectInReact";
 import UseEffectInReact2 from "./UseEffectInReact2";
 import InlineCssInReactJs from "./InlineCssInReactJs";
+import TaskCard from "./TaskCardData";
+import TaskCardData from "./TaskCardData";
  
 
 function App() {
@@ -80,7 +82,8 @@ function App() {
       {/* <UseEffectInReact /> */}
       {/* <UseEffectInReact2 /> */}
 <div style={{marginTop:"20px"}}>
-      <InlineCssInReactJs />
+     <TaskCardData />
+  
 </div>
 
     </>
