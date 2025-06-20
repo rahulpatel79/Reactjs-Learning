@@ -2,7 +2,7 @@ import { Profiler, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css'; // it is bootstrap css...
+import "bootstrap/dist/css/bootstrap.min.css"; // it is bootstrap css...
 import Header from "./Header";
 import { Login, Profile } from "./UserComponent";
 import JsxWithCurrlyBraces from "./JsxWithCurrlyBraces";
@@ -28,40 +28,39 @@ import TaskCard from "./TaskCardData";
 import TaskCardData from "./TaskCardData";
 import BootstrapUsInReactJs from "./BootstrapUsInReactJs";
 import UseRefInReact from "./UseRefInReact";
- 
+import UseRefInReactJs from "./UseRefInReactJs";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-    <div>
-    {/* <Login />
+      <div>
+        {/* <Login />
     <Profile />
     <Header />
     <Apple />
     <Color /> */}
-       {/* Compomets ko acces krne ka tarica hota he. 2) Componet Capital letter se start hota he.  */}
-      {/* <h1>Hello, <br /> It is Funcation : {sum()}</h1> */}
-       {/* funcation ko acces krne ka tarika {sum()} hota he. 2) funcatin small letter se start hota he. */}
-    </div>
+        {/* Compomets ko acces krne ka tarica hota he. 2) Componet Capital letter se start hota he.  */}
+        {/* <h1>Hello, <br /> It is Funcation : {sum()}</h1> */}
+        {/* funcation ko acces krne ka tarika {sum()} hota he. 2) funcatin small letter se start hota he. */}
+      </div>
 
-    {/* <div>
+      {/* <div>
       <JsxWithCurrlyBraces />
     </div> */}
-    
-    {/* <div>
+
+      {/* <div>
       <ClickEventAndFuncationCall />
     </div> */}
-   
-   
-    {/* <div>
+
+      {/* <div>
       <UseStateComponent />
       <Counter />
       <ToggleHideAndshow />
     </div> */}
 
-    {/* <div>
+      {/* <div>
       <MultipleConditionInReactJs />
     </div>
 
@@ -75,7 +74,7 @@ function App() {
       {/* <div>
         <ControllerComponentForm />
       </div> */}
-      
+
       {/* <HandleCheckbox /> */}
       {/* <HandleRadioAndDropDown /> */}
       {/* <LoopMapWithFunction /> */}
@@ -84,39 +83,30 @@ function App() {
       {/* <NestedLooping /> */}
       {/* <UseEffectInReact /> */}
       {/* <UseEffectInReact2 /> */}
-{/* <div style={{marginTop:"20px"}}>
+      {/* <div style={{marginTop:"20px"}}>
      <TaskCardData />
 </div> */}
 
-<div style={{marginTop:"20px"}}>
-     <BootstrapUsInReactJs />
-     <UseRefInReact />
-</div>
-
+      <div style={{ marginTop: "20px" }}>
+        <BootstrapUsInReactJs />
+        <UseRefInReact />
+        <UseRefInReactJs />
+      </div>
     </>
   );
 }
 
-
- 
-
-function  Apple() {
-    return (
-
-      <h1>I'm Apple</h1>
-    )
+function Apple() {
+  return <h1>I'm Apple</h1>;
 }
 
-function  Color() {
-    return (
-
-      <h1>Red</h1>
-    )
+function Color() {
+  return <h1>Red</h1>;
 }
 
-function sum(){
-  return 10+10;
- }
+function sum() {
+  return 10 + 10;
+}
 export default App;
 
 // me kya krta hu ki ek funcation bnake usme changes krta hu thik he.. or ye jo funcation bnaya he ye react js ka code nhi ye pure js ka code he
