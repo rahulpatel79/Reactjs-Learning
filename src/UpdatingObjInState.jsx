@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function UpdatingInState() {
+function UpdatingObjInState() {
 
     const [data, setData] = useState({
         name : "Rahul Patel",
@@ -37,4 +37,4 @@ const handleCity = (ci) =>{
   )
 }
 
-export default UpdatingInState
+export default UpdatingObjInState

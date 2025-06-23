@@ -33,7 +33,10 @@ import UseTransitionInReactJs from "./UseTransitionInReactJs";
 import DerivedStateInReactJs from "./DerivedStateInReactJs";
 import LiftStateUpAddUser from "./LiftStateUpAddUser";
 import LirftDisplayUser from "./LirftDisplayUser";
-import UpdatingInState from "./UpdatingInState";
+import UpdatingObjInState from "./UpdatingObjInState";
+import UpdatingArray from "./UpdatingArray";
+import UserActionState from "./UserActionState";
+import UniQueIDInReactJs from "./UniQueIDInReactJs";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -111,7 +114,10 @@ function App() {
         {/* <LirftDisplayUser user={user}/> */}
       </div>
          <div style={{ marginTop: "20px" }}> 
-        <UpdatingInState />
+        {/* <UpdatingObjInState /> */}
+        {/* <UpdatingArray /> */}
+        {/* <UserActionState /> */}
+        <UniQueIDInReactJs />
         </div>
     </>
   );
