@@ -31,9 +31,14 @@ import UseRefInReact from "./UseRefInReact";
 import UseFormHookInReact from "./UseFormHookInReact";
 import UseTransitionInReactJs from "./UseTransitionInReactJs";
 import DerivedStateInReactJs from "./DerivedStateInReactJs";
+import LiftStateUpAddUser from "./LiftStateUpAddUser";
+import LirftDisplayUser from "./LirftDisplayUser";
+import UpdatingInState from "./UpdatingInState";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const [user, setUser] = useState(''); // it is Lift State Up concept code
 
   return (
     <>
@@ -97,9 +102,17 @@ function App() {
       <div style={{ marginTop: "20px" }}>
      {/* <UseFormHookInReact /> */}
      {/* <UseTransitionInReactJs /> */}
-     <DerivedStateInReactJs /> 
-
+     {/* <DerivedStateInReactJs />  */}
       </div>
+
+      {/*Lift State Up Concept Div  */}
+      <div style={{ marginTop: "20px" }}> 
+        {/* <LiftStateUpAddUser setUser={setUser} /> */}
+        {/* <LirftDisplayUser user={user}/> */}
+      </div>
+         <div style={{ marginTop: "20px" }}> 
+        <UpdatingInState />
+        </div>
     </>
   );
 }
