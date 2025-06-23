@@ -33,6 +33,7 @@ import UseTransitionInReactJs from "./UseTransitionInReactJs";
 import DerivedStateInReactJs from "./DerivedStateInReactJs";
 import LiftStateUpAddUser from "./LiftStateUpAddUser";
 import LirftDisplayUser from "./LirftDisplayUser";
+import UpdatingInState from "./UpdatingInState";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -106,10 +107,12 @@ function App() {
 
       {/*Lift State Up Concept Div  */}
       <div style={{ marginTop: "20px" }}> 
-        
-        <LiftStateUpAddUser setUser={setUser} />
-        <LirftDisplayUser user={user}/>
+        {/* <LiftStateUpAddUser setUser={setUser} /> */}
+        {/* <LirftDisplayUser user={user}/> */}
       </div>
+         <div style={{ marginTop: "20px" }}> 
+        <UpdatingInState />
+        </div>
     </>
   );
 }
