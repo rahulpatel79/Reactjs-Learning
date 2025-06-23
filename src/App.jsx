@@ -30,6 +30,7 @@ import BootstrapUsInReactJs from "./BootstrapUsInReactJs";
 import UseRefInReact from "./UseRefInReact";
 import UseFormHookInReact from "./UseFormHookInReact";
 import UseTransitionInReactJs from "./UseTransitionInReactJs";
+import DerivedStateInReactJs from "./DerivedStateInReactJs";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -88,13 +89,16 @@ function App() {
      <TaskCardData />
 </div> */}
 
-      <div style={{ marginTop: "20px" }}>
+      {/* <div style={{ marginTop: "20px" }}>
         <BootstrapUsInReactJs />
         <UseRefInReact />
-      </div>
+      </div> */}
+
       <div style={{ marginTop: "20px" }}>
      {/* <UseFormHookInReact /> */}
-     <UseTransitionInReactJs />
+     {/* <UseTransitionInReactJs /> */}
+     <DerivedStateInReactJs /> 
+
       </div>
     </>
   );
