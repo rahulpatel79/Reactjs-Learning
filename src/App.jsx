@@ -39,6 +39,7 @@ import UserActionState from "./UserActionState";
 import UniQueIDInReactJs from "./UniQueIDInReactJs"; 
 import CollageContext from "./CollageContext";
 import { SubjectContextData } from "./ContextData";
+import RouterForBrowser from "./RouterForBrowser";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -121,12 +122,19 @@ function App() {
         {/* <UserActionState /> */}
         {/* <UniQueIDInReactJs /> */}
       </div>
-      <div className="p-4" style={{ backgroundColor: "yellow" }} >
+      {/* <div className="p-4" style={{ backgroundColor: "yellow" }} >
         <SubjectContextData.Provider value="Maths">
         <h1>Context API</h1>
         <CollageContext />
         </SubjectContextData.Provider>
+      </div>   */}
+
+      
+      <div style={{ marginTop: "20px" }}>
+        <RouterForBrowser />
       </div>
+
+
     </>
   );
 }
