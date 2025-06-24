@@ -36,12 +36,14 @@ import LirftDisplayUser from "./LirftDisplayUser";
 import UpdatingObjInState from "./UpdatingObjInState";
 import UpdatingArray from "./UpdatingArray";
 import UserActionState from "./UserActionState";
-import UniQueIDInReactJs from "./UniQueIDInReactJs";
+import UniQueIDInReactJs from "./UniQueIDInReactJs"; 
+import CollageContext from "./CollageContext";
+import { SubjectContextData } from "./ContextData";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  const [user, setUser] = useState(''); // it is Lift State Up concept code
+  const [user, setUser] = useState(""); // it is Lift State Up concept code
 
   return (
     <>
@@ -103,22 +105,28 @@ function App() {
       </div> */}
 
       <div style={{ marginTop: "20px" }}>
-     {/* <UseFormHookInReact /> */}
-     {/* <UseTransitionInReactJs /> */}
-     {/* <DerivedStateInReactJs />  */}
+        {/* <UseFormHookInReact /> */}
+        {/* <UseTransitionInReactJs /> */}
+        {/* <DerivedStateInReactJs />  */}
       </div>
 
       {/*Lift State Up Concept Div  */}
-      <div style={{ marginTop: "20px" }}> 
+      <div style={{ marginTop: "20px" }}>
         {/* <LiftStateUpAddUser setUser={setUser} /> */}
         {/* <LirftDisplayUser user={user}/> */}
       </div>
-         <div style={{ marginTop: "20px" }}> 
+      <div style={{ marginTop: "20px" }}>
         {/* <UpdatingObjInState /> */}
         {/* <UpdatingArray /> */}
         {/* <UserActionState /> */}
-        <UniQueIDInReactJs />
-        </div>
+        {/* <UniQueIDInReactJs /> */}
+      </div>
+      <div className="p-4" style={{ backgroundColor: "yellow" }} >
+        <SubjectContextData.Provider value="Maths">
+        <h1>Context API</h1>
+        <CollageContext />
+        </SubjectContextData.Provider>
+      </div>
     </>
   );
 }

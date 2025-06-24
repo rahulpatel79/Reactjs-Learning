@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
- export const SubjectContext = createContext("Maths")
+ export const SubjectContextData = createContext("Science"); // Science is a default data
