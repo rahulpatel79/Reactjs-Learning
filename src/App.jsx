@@ -3,7 +3,6 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css"; // it is bootstrap css...
-import Header from "./Header";
 import { Login, Profile } from "./UserComponent";
 import JsxWithCurrlyBraces from "./JsxWithCurrlyBraces";
 import ClickEventAndFuncationCall from "./ClickEventAndFuncationCall";
@@ -40,6 +39,8 @@ import UniQueIDInReactJs from "./UniQueIDInReactJs";
 import CollageContext from "./CollageContext";
 import { SubjectContextData } from "./ContextData";
 import RouterForBrowser from "./RouterForBrowser";
+import Home from "./PracticeHeader/Home";
+import MainPage from "./PracticeHeader/MainPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -130,8 +131,12 @@ function App() {
       </div>   */}
 
       
-      <div style={{ marginTop: "20px" }}>
+      {/* <div style={{ marginTop: "20px" }}>
         <RouterForBrowser />
+      </div> */}
+      <div>
+        {/* <Home /> */}
+        <MainPage />
       </div>
 
 
