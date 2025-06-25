@@ -9,18 +9,25 @@ import Collage from "./Collage";
 import CollageStudent from "./CollageStudent";
 import CollageDepartment from "./CollageDepartment";
 import CollageDetail from "./CollageDetail";
+import UserList from "./UserList";
+import UserDetailed from "./UserDetailed";
 
 const MainPage = () => {
   return (
     <BrowserRouter>
       {/* <Navbar /> */}
-
       <Routes>
+        
+
         <Route element={<Navbar />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/userlist/list?" element={<UserList />} />
+          
+          <Route path="/users/:id" element={<UserDetailed />} />
+
         </Route>
 
         <Route path="/collage" element={<Collage />}>
