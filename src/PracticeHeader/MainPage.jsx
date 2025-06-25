@@ -27,9 +27,7 @@ const MainPage = () => {
           <Route path="/userlist/list?" element={<UserList />} />
           
           <Route path="/users/:id" element={<UserDetailed />} />
-
         </Route>
-
         <Route path="/collage" element={<Collage />}>
           <Route  index element={<CollageStudent />} />
           <Route path="department" element={<CollageDepartment />} />
