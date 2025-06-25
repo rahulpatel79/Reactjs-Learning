@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 import './header.css'
 const Navbar = () => {
 
   return (
-    <div className="header">
+  <>
+  <div>
+      <div className="header">
  
       <div>
         <Link className="link" to='/'>
@@ -23,11 +25,17 @@ const Navbar = () => {
             <Link className="link" to="/contact"> Contact-Us </Link>
           </li>
           <li>
+            <Link className="link" to="/collage">Collage</Link>
+          </li>
+          <li>
             <Link className="link" to="/login"> Login</Link>
           </li>
         </ul>
       </div>
     </div>
+    <Outlet />
+  </div>
+  </>
   );
 };
 
