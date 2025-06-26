@@ -137,14 +137,14 @@ function App() {
       </div> */}
       <div>
         {/* <Home /> */}
-        {/* <MainPage /> */}
+        <MainPage />
       </div>
 
       {/* Use Tailwind Css  */}
       <div>
         {/* Yes It's Working */}
-        <Test1 />
-        <HowToUseApi />
+        {/* <Test1 /> */}
+        {/* <HowToUseApi /> */}
       </div>
     </>
   );

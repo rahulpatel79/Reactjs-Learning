@@ -23,7 +23,10 @@ const Navbar = () => {
             <NavLink className="link" to="/userlist"> User</NavLink>
           </li>
           <li>
-            <NavLink className="link" to="/userlist/list"> List</NavLink>
+            <NavLink className="link" to="/addUser">Add-User</NavLink>
+          </li>
+          <li>
+            {/* <NavLink className="link" to="/userlist/list"> List</NavLink> */}
           </li>
           <li>
             <NavLink className="link" to="/about"> About </NavLink>
