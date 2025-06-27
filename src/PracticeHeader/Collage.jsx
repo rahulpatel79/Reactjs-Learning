@@ -5,7 +5,7 @@ import Home from './Home'
 const Collage = () => {
   return (
     <div className='collage m-0 text-center'>
-      <h4><Link to="/home">Go Back to Home</Link></h4>
+      <h4><NavLink to="/">Go Back to Home</NavLink></h4>
       <h2 className='mt-3'>Collage Component</h2>
         <NavLink className="link" to="">Student</NavLink>
         <NavLink className="link" to="department">Department</NavLink>

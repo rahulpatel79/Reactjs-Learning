@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router";
+import {  Link, NavLink, Outlet } from "react-router";
 import './header.css'
 const Navbar = () => {
 
@@ -15,26 +15,30 @@ const Navbar = () => {
       </div>
       <div>
         <ul>
+          {/* man lo ki active to bohot sari jagah use hoga to ham kya krte he ki class ka name hi change kr dete he.. */}
           <li>
-            <Link className="link" to="/"> Home </Link>
+            <NavLink className={({isActive})=> isActive ? 'custom-active link' : 'link'}  to="/"> Home </NavLink>
           </li>
           <li>
-            <Link className="link" to="/userlist"> User</Link>
+            <NavLink className="link" to="/userlist"> User</NavLink>
           </li>
           <li>
-            <Link className="link" to="/userlist/list"> List</Link>
+            <NavLink className="link" to="/addUser">Add-User</NavLink>
           </li>
           <li>
-            <Link className="link" to="/about"> About </Link>
+            {/* <NavLink className="link" to="/userlist/list"> List</NavLink> */}
           </li>
           <li>
-            <Link className="link" to="/contact"> Contact-Us </Link>
+            <NavLink className="link" to="/about"> About </NavLink>
           </li>
           <li>
-            <Link className="link" to="/collage">Collage</Link>
+            <NavLink className="link" to="/contact"> Contact-Us </NavLink>
           </li>
           <li>
-            <Link className="link" to="/login"> Login</Link>
+            <NavLink className="link" to="/collage">Collage</NavLink>
+          </li>
+          <li>
+            <NavLink className="link" to="/login"> Login</NavLink>
           </li>
         </ul>
       </div>

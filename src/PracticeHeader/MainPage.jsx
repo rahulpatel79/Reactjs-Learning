@@ -11,6 +11,7 @@ import CollageDepartment from "./CollageDepartment";
 import CollageDetail from "./CollageDetail";
 import UserList from "./UserList";
 import UserDetailed from "./UserDetailed";
+import UserAdd from "./UserAdd";
 
 const MainPage = () => {
   return (
@@ -21,6 +22,7 @@ const MainPage = () => {
 
         <Route element={<Navbar />}>
           <Route path="/" element={<Home />} />
+          <Route path="/addUser" element={<UserAdd />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />

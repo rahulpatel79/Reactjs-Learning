@@ -35,12 +35,14 @@ import LirftDisplayUser from "./LirftDisplayUser";
 import UpdatingObjInState from "./UpdatingObjInState";
 import UpdatingArray from "./UpdatingArray";
 import UserActionState from "./UserActionState";
-import UniQueIDInReactJs from "./UniQueIDInReactJs"; 
+import UniQueIDInReactJs from "./UniQueIDInReactJs";
 import CollageContext from "./CollageContext";
 import { SubjectContextData } from "./ContextData";
 import RouterForBrowser from "./RouterForBrowser";
 import Home from "./PracticeHeader/Home";
 import MainPage from "./PracticeHeader/MainPage";
+import Test1 from "./TailwindCSSCompTest/Test1";
+import HowToUseApi from "./APICallComponent/HowToUseApi";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -130,7 +132,6 @@ function App() {
         </SubjectContextData.Provider>
       </div>   */}
 
-      
       {/* <div style={{ marginTop: "20px" }}>
         <RouterForBrowser />
       </div> */}
@@ -139,7 +140,12 @@ function App() {
         <MainPage />
       </div>
 
-
+      {/* Use Tailwind Css  */}
+      <div>
+        {/* Yes It's Working */}
+        {/* <Test1 /> */}
+        {/* <HowToUseApi /> */}
+      </div>
     </>
   );
 }
